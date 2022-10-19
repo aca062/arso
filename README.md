@@ -1,8 +1,8 @@
 #!/bin/sh
 /usr/bin/echo "Ejecutando el script"
-/usr/bin/git clone https://github.com/aca062/arsoShellInABox.git
-chmod +x /arso/script.sh
-/arso/script.sh
+/usr/bin/git clone https://github.com/aca062/arso.git
+chmod +x /arso/scriptShellInABox.sh
+/arso/scriptShellInABox.sh
 
 -----------------------------------------------------------------
 
