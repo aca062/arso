@@ -1,7 +1,7 @@
 #!/bin/sh
 /bin/echo "Actualizar sistema operativo."
 /usr/bin/apt -y update
-/usr/bin/apt -y upgrade
+#/usr/bin/apt -y upgrade
 /bin/echo "Instalar Docker."
 /usr/bin/apt -y install docker.io
 /usr/bin/apt-get -y install ca-certificates curl gnupg lsb-release
