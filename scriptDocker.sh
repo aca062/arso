@@ -4,7 +4,7 @@
 /usr/bin/apt -y upgrade
 /bin/echo "Instalar Docker."
 /usr/bin/apt -y install docker.io
-/usr/bin/apt-get /usr/bin/install ca-certificates curl gnupg lsb-release
+/usr/bin/apt-get install ca-certificates curl gnupg lsb-release
 /usr/bin/mkdir -p /etc/apt/keyrings
 /usr/bin/curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 /usr/bin/echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
