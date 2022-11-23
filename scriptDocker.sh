@@ -4,14 +4,14 @@
 /usr/bin/apt -y upgrade
 /bin/echo "Instalar Docker."
 /usr/bin/apt -y install docker.io
-/usr/bin/apt-get install ca-certificates curl gnupg lsb-release
+/usr/bin/apt-get -y install ca-certificates curl gnupg lsb-release
 /usr/bin/mkdir -p /etc/apt/keyrings
 /usr/bin/curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 /usr/bin/echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 /usr/bin/chmod a+r /etc/apt/keyrings/docker.gpg
 /usr/bin/apt-get update
-/usr/bin/apt-get /usr/bin/install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+/usr/bin/apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 /bin/echo "Cambiar password"
 /bin/echo 'ubuntu:10151' | chpasswd
 /usr/sbin/groupadd docker
