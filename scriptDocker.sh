@@ -3,7 +3,6 @@
 /usr/bin/apt -y update
 /usr/bin/apt -y upgrade
 /bin/echo "Instalar Docker."
-/usr/bin/apt -y install docker.io
 /usr/bin/apt-get -y install ca-certificates curl gnupg lsb-release
 /usr/bin/mkdir -p /etc/apt/keyrings
 /usr/bin/curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
@@ -19,4 +18,3 @@
 /bin/echo "Modificar sshd_config para activar contraseñas"
 /bin/sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 /bin/systemctl restart ssh
-/bin/systemctl restart docker.service
