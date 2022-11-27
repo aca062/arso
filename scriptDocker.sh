@@ -2,7 +2,7 @@
 /bin/echo "Actualizar sistema operativo."
 /usr/bin/apt -y update
 /usr/bin/apt -y upgrade
-/bin/echo "Instalar Docker."
+/bin/echo "Instalar Docker"
 /usr/bin/apt-get -y install ca-certificates curl gnupg lsb-release
 /usr/bin/mkdir -p /etc/apt/keyrings
 /usr/bin/curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
